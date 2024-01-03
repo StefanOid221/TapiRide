@@ -24,9 +24,6 @@ Player::Player() {
 
     collider.w = gPlayerTexture.getWidth();
     collider.h = gPlayerTexture.getHeight()*2;
-
-    SDL_Log("Player Col w %d", collider.w);
-    SDL_Log("Player Col h %d", collider.h);
 }
 
 void Player::getPosition(int* x, int* y) {
@@ -71,7 +68,6 @@ void Player::applyImpulse(int x, int y, int swipeMagnitude) {
     float impulseStrength = 0.05f;
     velX = x*impulseStrength;
     velY += y*impulseStrength;
-    SDL_Log(" ##SDL## VelX: %f", velX);
 }
 
 
@@ -98,7 +94,7 @@ void Player::move(double deltatime){
     }
     posX +=  static_cast<int>(velX);
     //If the dot went too far to the left or right
-    if( ( posX  < 0 ) || ( posX > gScreenRect.w - 2*collider.w ) )
+    if( ( posX  < 0 ) || ( posX > gScreenRect.w) )
     {
         //Move back
         posX -= static_cast<int>(velX);
@@ -124,8 +120,8 @@ void Player:: render() {
     gDimension.w = gPlayerTexture.getWidth()*2;
     gDimension.h = gPlayerTexture.getHeight()*2;
 
-//    SDL_SetRenderDrawColor( gRenderer, 0xFF, 0x00, 0x00, 0xFF );
-//    SDL_RenderFillRect( gRenderer, &collider );
+    SDL_SetRenderDrawColor( gRenderer, 0xFF, 0x00, 0x00, 0xFF );
+    SDL_RenderFillRect( gRenderer, &collider );
 
     gPlayerTexture.render(posX, posY, nullptr, &gDimension);
 }
@@ -133,5 +129,10 @@ void Player:: render() {
 void Player::logPosition() {
     SDL_Log("Player X %d",posX);
     SDL_Log("Player Y %d",posY);
+}
+
+void Player::setPosition() {
+    posX = gScreenRect.w/2;
+    posY = gScreenRect.h*3/4;
 }
 

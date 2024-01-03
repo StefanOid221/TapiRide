@@ -88,6 +88,8 @@ bool loadMedia()
 	return success;
 }
 
+
+
 void close()
 {
 	//Free loaded images
@@ -99,6 +101,8 @@ void close()
 	SDL_DestroyWindow( gWindow );
 	gWindow = nullptr;
 	gRenderer = nullptr;
+    gCurrentState = nullptr;
+    gNextState = nullptr;
 
 	//Quit SDL subsystems
 	IMG_Quit();
@@ -119,4 +123,28 @@ void createObstacle() {
 		gameManager.newObstacle(obstacle);
 	}
 	nObstacles++;
+}
+
+void setNextState( GameState* newState )
+{
+	//If the user doesn't want to exit
+	if( gNextState != ExitState::get() )
+	{
+		//Set the next state
+		gNextState = newState;
+	}
+}
+
+void changeState()
+{
+    //If the state needs to be changed
+    if( gNextState != NULL )
+    {
+        gCurrentState->exit();
+        gNextState->enter();
+
+        //Change the current state ID
+        gCurrentState = gNextState;
+        gNextState = NULL;
+    }
 }

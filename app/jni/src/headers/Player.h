@@ -31,6 +31,8 @@ public:
 
     void logPosition();
 
+    void setPosition();
+
 private:
 
     int posX, posY;

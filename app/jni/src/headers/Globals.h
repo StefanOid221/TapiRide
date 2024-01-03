@@ -20,8 +20,18 @@ extern LTexture gObstacleTexture;
 extern int nObstacles;
 extern GameManager gameManager;
 
+extern Player player;
+
 extern LTimer fpsTimer;
 extern LTimer capTimer;
+
+void setNextState( GameState* nextState );
+void changeState();
+
+extern GameState* gCurrentState;
+extern GameState* gNextState;
+
+extern double deltaTime;
 
 extern SDL_Rect gScreenRect;
 

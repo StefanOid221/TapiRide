@@ -12,9 +12,15 @@ LTexture gObstacleTexture;
 
 SDL_Rect gScreenRect;
 GameManager gameManager;
+Player player;
 
 LTimer fpsTimer;
 LTimer capTimer;
+
+GameState* gCurrentState = nullptr;
+GameState* gNextState = nullptr;
+
+double deltaTime;
 
 int nObstacles = 0;
 

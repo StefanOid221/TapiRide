@@ -20,40 +20,25 @@ int main( int argc, char *argv[] )
             SDL_Log( "##SDL## Failed to initialize!%s\n", SDL_GetError());
         }
         else {
-            bool quit = false;
             SDL_Event e;
-            Player player;
-            int scrollingOffset = 0;
-
-            //deltaTime
-            Uint32 startTime = 0;
-            Uint32 NOW = SDL_GetTicks();
-            Uint32 LAST;
-            double deltaTime = 0;
 
             //FPS
             int countedFrames = 0;
             fpsTimer.start();
-            while (!quit)
+
+            gCurrentState = IntroState::get();
+            gCurrentState->enter();
+
+            while (gCurrentState != ExitState::get() )
             {
-                LAST = NOW;
-                NOW = SDL_GetTicks();
-                deltaTime = NOW - LAST;
-                if (nObstacles < 2){
-                    if (SDL_GetTicks() - startTime > 2500){
-                        createObstacle();
-                        startTime = SDL_GetTicks();
-                    }
-                }
 				while( SDL_PollEvent( &e ) != 0 )
 				{
+                    gCurrentState->handleEvent( e );
 					//User requests quit
 					if( e.type == SDL_QUIT )
 					{
-						quit = true;
+                        setNextState( ExitState::get() );
 					}
-					//Handle button events
-                    player.handleEvent(&e);
 				}
                 //FPS
                 float avgFPS = countedFrames / ( fpsTimer.getTicks() / 1000.f );
@@ -61,21 +46,12 @@ int main( int argc, char *argv[] )
                 {
                     avgFPS = 0;
                 }
+                gCurrentState->update();
+                changeState();
                 //Render Elements
+//                SDL_SetRenderDrawColor( gRenderer, 0xFF, 0xFF, 0xFF, 0xFF );
                 SDL_RenderClear( gRenderer );
-                player.move(deltaTime);
-                gameManager.moveObstacles();
-                // Render elements here
-                ++scrollingOffset;
-                if (scrollingOffset > gBackgroundTexture.getHeight()){
-                    scrollingOffset = 0;
-                }
-                gBackgroundTexture.render(0, scrollingOffset,nullptr, &gScreenRect);
-                gBackgroundTexture.render(0, scrollingOffset - gBackgroundTexture.getHeight(),nullptr, &gScreenRect);
-                player.render();
-                gameManager.renderObstacles();
-                gameManager.checkCollision(&player);
-//                obstacle.render();
+                gCurrentState->render();
                 SDL_RenderPresent( gRenderer );
 
                 int frameTicks = capTimer.getTicks();
