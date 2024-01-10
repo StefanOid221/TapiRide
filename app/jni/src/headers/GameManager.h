@@ -46,17 +46,20 @@ private:
 
     //Private constructor
     IntroState();
-
-    //Intro background
-    LTexture mBackgroundTexture;
-
     //Intro message
     LTexture mMessageTexture;
+    LTexture playButton;
+    TTF_Font* introFont;
+    SDL_Color introColor = { 0, 0, 0 };
+    SDL_Rect buttonDimension;
+    SDL_Rect buttonDimension2;
+    SDL_Rect buttonDimension3;
+
 };
 
-class ExitState: public GameState{
+class GameOverState: public GameState{
 public:
-    static ExitState* get();
+    static GameOverState* get();
 
     bool enter();
     bool exit();
@@ -67,10 +70,20 @@ public:
     void render();
 private:
     //Static instance
-    static ExitState sExitState;
+    static GameOverState sExitState;
+
+    LTexture exitMessageTexture;
+    LTexture exitScoreTexture;
+    LTexture exitRecordTexture;
+    TTF_Font* exitFont;
+    SDL_Color exitColor = { 0, 0, 0 };
+    LTexture restartTexture;
+    SDL_Rect buttonDimension;
+    SDL_Rect buttonDimension2;
+    SDL_Rect buttonDimension3;
 
     //Private constructor
-    ExitState();
+    GameOverState();
 };
 
 
@@ -96,11 +109,9 @@ private:
     //Private constructor
     TitleState();
 
-    //Intro background
-    LTexture mBackgroundTexture;
-
-    //Intro message
-    LTexture mMessageTexture;
+    LTexture titleMessageTexture;
+    TTF_Font* titleFont;
+    SDL_Color titleColor = { 0, 0, 0 };
 };
 
 class OverWorldState : public GameState {
@@ -126,11 +137,36 @@ private:
     static OverWorldState sOverWorldState;
 
     int scrollingOffset = 0;
+    int lastScore = 0;
     Uint32 startTime = 0;
     Uint32 NOW{}, LAST{};
 
+    LTexture gameScoreTexture;
+    TTF_Font* gameFont;
+    SDL_Color gameColor = { 0, 0, 0 };
 
+};
 
+class ExitState : public GameState {
+public:
+    static ExitState *get();
+
+    bool enter();
+
+    bool exit();
+
+    //Main loop functions
+    void handleEvent(SDL_Event &e);
+
+    void update();
+
+    void render();
+
+private:
+
+    ExitState();
+
+    static ExitState sExitState;
 };
 
 class GameManager{
@@ -145,7 +181,7 @@ public:
 
     void renderObstacles();
 
-
+    void correctObstaclePosition();
 
 };
 

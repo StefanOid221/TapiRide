@@ -555,3 +555,158 @@ create_cxx_tasks
   [gap of 16ms]
 create_cxx_tasks completed in 150ms
 
+# C/C++ build system timings
+create_cxx_tasks
+  create-initial-cxx-model
+    create-module-model 15ms
+    create-variant-model 21ms
+    create-ARMEABI_V7A-model 33ms
+    [gap of 57ms]
+  create-initial-cxx-model completed in 132ms
+  [gap of 17ms]
+create_cxx_tasks completed in 156ms
+
+# C/C++ build system timings
+create_cxx_tasks
+  create-initial-cxx-model 77ms
+create_cxx_tasks completed in 82ms
+
+# C/C++ build system timings
+create_cxx_tasks
+  create-initial-cxx-model 59ms
+create_cxx_tasks completed in 61ms
+
+# C/C++ build system timings
+create_cxx_tasks
+  create-initial-cxx-model 51ms
+create_cxx_tasks completed in 54ms
+
+# C/C++ build system timings
+create_cxx_tasks
+  create-initial-cxx-model 56ms
+create_cxx_tasks completed in 58ms
+
+# C/C++ build system timings
+create_cxx_tasks
+  create-initial-cxx-model 43ms
+create_cxx_tasks completed in 45ms
+
+# C/C++ build system timings
+create_cxx_tasks
+  create-initial-cxx-model
+    create-module-model 24ms
+    create-variant-model 32ms
+    create-ARMEABI_V7A-model 39ms
+    [gap of 63ms]
+  create-initial-cxx-model completed in 164ms
+  [gap of 22ms]
+create_cxx_tasks completed in 192ms
+
+# C/C++ build system timings
+create_cxx_tasks
+  create-initial-cxx-model 62ms
+create_cxx_tasks completed in 64ms
+
+# C/C++ build system timings
+create_cxx_tasks
+  create-initial-cxx-model 55ms
+create_cxx_tasks completed in 56ms
+
+# C/C++ build system timings
+create_cxx_tasks
+  create-initial-cxx-model
+    create-module-model 19ms
+    create-variant-model 18ms
+    create-ARMEABI_V7A-model 37ms
+    [gap of 45ms]
+  create-initial-cxx-model completed in 124ms
+  [gap of 17ms]
+create_cxx_tasks completed in 148ms
+
+# C/C++ build system timings
+create_cxx_tasks
+  create-initial-cxx-model
+    create-module-model 23ms
+    create-variant-model 26ms
+    create-ARMEABI_V7A-model 51ms
+    create-ARM64_V8A-model 12ms
+    create-X86-model 10ms
+    [gap of 48ms]
+    create-X86_64-model 18ms
+  create-initial-cxx-model completed in 200ms
+  [gap of 21ms]
+create_cxx_tasks completed in 229ms
+
+# C/C++ build system timings
+create_cxx_tasks
+  create-initial-cxx-model
+    [gap of 32ms]
+    create-X86_64-model 10ms
+    [gap of 44ms]
+  create-initial-cxx-model completed in 86ms
+create_cxx_tasks completed in 89ms
+
+# C/C++ build system timings
+create_cxx_tasks
+  create-initial-cxx-model
+    create-module-model 19ms
+    create-variant-model 46ms
+    create-ARMEABI_V7A-model 50ms
+    create-ARM64_V8A-model 11ms
+    create-X86_64-model 12ms
+    [gap of 23ms]
+    create-ARM64_V8A-model 11ms
+    [gap of 16ms]
+  create-initial-cxx-model completed in 205ms
+  [gap of 28ms]
+create_cxx_tasks completed in 241ms
+
+# C/C++ build system timings
+create_cxx_tasks
+  create-initial-cxx-model
+    create-module-model 14ms
+    create-variant-model 18ms
+    create-ARMEABI_V7A-model 38ms
+    [gap of 45ms]
+  create-initial-cxx-model completed in 122ms
+  [gap of 15ms]
+create_cxx_tasks completed in 144ms
+
+# C/C++ build system timings
+create_cxx_tasks
+  create-initial-cxx-model 84ms
+create_cxx_tasks completed in 89ms
+
+# C/C++ build system timings
+create_cxx_tasks
+  create-initial-cxx-model
+    create-module-model 18ms
+    create-variant-model 18ms
+    create-ARMEABI_V7A-model 30ms
+    [gap of 48ms]
+  create-initial-cxx-model completed in 118ms
+  [gap of 15ms]
+create_cxx_tasks completed in 140ms
+
+# C/C++ build system timings
+create_cxx_tasks
+  create-initial-cxx-model
+    create-module-model 18ms
+    create-variant-model 17ms
+    create-ARMEABI_V7A-model 31ms
+    [gap of 40ms]
+  create-initial-cxx-model completed in 112ms
+  [gap of 19ms]
+create_cxx_tasks completed in 138ms
+
+# C/C++ build system timings
+create_cxx_tasks
+  create-initial-cxx-model
+    create-module-model 15ms
+    create-variant-model 16ms
+    create-ARMEABI_V7A-model 32ms
+    [gap of 43ms]
+  create-initial-cxx-model completed in 110ms
+  [gap of 15ms]
+create_cxx_tasks completed in 131ms
+

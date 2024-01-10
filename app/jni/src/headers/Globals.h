@@ -16,9 +16,15 @@ extern SDL_Renderer* gRenderer;
 extern LTexture gBackgroundTexture;
 extern LTexture gPlayerTexture;
 extern LTexture gObstacleTexture;
+extern LTexture gFontTexture;
 
 extern int nObstacles;
+extern int actualScore;
+extern int recordScore;
 extern GameManager gameManager;
+extern TTF_Font* gFont;
+
+
 
 extern Player player;
 

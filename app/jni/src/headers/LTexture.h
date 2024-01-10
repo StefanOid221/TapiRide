@@ -2,6 +2,7 @@
 #define LTEXTURE_H
 
 #include <SDL_image.h>
+#include <SDL_ttf.h>
 #include <string>
 
 class LTexture
@@ -15,6 +16,8 @@ class LTexture
 
 		//Loads image at specified path
 		bool loadFromFile( std::string path );
+
+		bool loadFromRenderedText( std::string textureText, SDL_Color textColor, TTF_Font* refFont );
 
 		//Deallocates texture
 		void free();

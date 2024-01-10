@@ -15,7 +15,15 @@ public:
 
     SDL_Rect collider;
 
+    SDL_Rect dstRect;
+
     Player();
+
+    bool collissionDetected;
+
+    bool pointScored;
+
+    bool isInit;
 
 //    ~Player();
 
@@ -32,6 +40,10 @@ public:
     void logPosition();
 
     void setPosition();
+
+    void setYVelocity(float y);
+
+    void initPlayer();
 
 private:
 

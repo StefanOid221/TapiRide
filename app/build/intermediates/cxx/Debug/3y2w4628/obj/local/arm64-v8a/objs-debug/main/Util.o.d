@@ -62,6 +62,7 @@ D:\SDL_Projects\androidstudio-projects\android-project\app\build\intermediates\c
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_version.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_locale.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_misc.h \
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../SDL2_ttf/SDL_ttf.h \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/string \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/string_view \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/__string \
@@ -104,7 +105,39 @@ D:\SDL_Projects\androidstudio-projects\android-project\app\build\intermediates\c
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/cctype \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/wctype.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/LButton.h \
-  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Constants.h
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Constants.h \
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/GameManager.h \
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Cola.h \
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Obstacle.h \
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Player.h \
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/LTimer.h \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/random \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/cmath \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/numeric \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/vector \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/__bit_reference \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/__split_buffer \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/istream \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/ostream \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/ios \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/__locale \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/mutex \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/__mutex_base \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/system_error \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/__errc \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/cerrno \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/locale.h \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/support/android/locale_bionic.h \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/streambuf \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/locale \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/cstdarg \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/__bsd_locale_fallbacks.h \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/bitset \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/fstream \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/filesystem \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/stack \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/deque \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/iomanip
 
 D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Globals.h:
 
@@ -230,6 +263,8 @@ D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_
 
 D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_misc.h:
 
+D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../SDL2_ttf/SDL_ttf.h:
+
 C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/string:
 
 C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/string_view:
@@ -315,3 +350,67 @@ C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-s
 D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/LButton.h:
 
 D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Constants.h:
+
+D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/GameManager.h:
+
+D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Cola.h:
+
+D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Obstacle.h:
+
+D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Player.h:
+
+D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/LTimer.h:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/random:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/cmath:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/numeric:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/vector:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/__bit_reference:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/__split_buffer:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/istream:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/ostream:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/ios:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/__locale:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/mutex:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/__mutex_base:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/system_error:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/__errc:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/cerrno:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/locale.h:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/support/android/locale_bionic.h:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/streambuf:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/locale:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/cstdarg:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/__bsd_locale_fallbacks.h:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/bitset:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/fstream:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/filesystem:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/stack:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/deque:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/iomanip:

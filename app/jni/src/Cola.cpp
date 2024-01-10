@@ -63,18 +63,21 @@ void Cola::renderObstacles() {
 
             if (randomNumber == 1){
                 aux->dato->invisible = true;
+                aux->dato->scorePoints = true;
                 aux->siguiente->dato->invisible = false;
                 aux->siguiente->siguiente->dato->invisible = false;
             }
             else if (randomNumber == 2){
                 aux->dato->invisible = false;
                 aux->siguiente->dato->invisible = true;
+                aux->siguiente->dato->scorePoints = true;
                 aux->siguiente->siguiente->dato->invisible = false;
             }
             else{
                 aux->dato->invisible = false;
                 aux->siguiente->dato->invisible = false;
                 aux->siguiente->siguiente->dato->invisible = true;
+                aux->siguiente->siguiente->dato->scorePoints = true;
             }
         }
         aux->dato->render();
@@ -114,9 +117,29 @@ bool Cola::checkColission(Player *player) {
             } else if (leftA >= rightB) {
                 isCol = false;
             } else {
+                player->collissionDetected = true;
                 return true;
+            }
+        }
+        else{
+            if (aux->dato->scorePoints){
+                SDL_Rect a = aux->dato->oCollider;
+                SDL_Rect b = player->collider;
+                topA = a.y;
+                topB = b.y;
+
+                if (topA > 0 && topB < topA && topA - topB < 50 ){
+                    player->pointScored = true;
+                    aux->dato->scorePoints = false;
+                }
             }
         }
     }
     return isCol;
+}
+
+void Cola::correctAllObstacles() {
+    for (Nodo* aux =primero; aux!= nullptr; aux = aux->siguiente){
+        aux->dato->correctPosition();
+    }
 }

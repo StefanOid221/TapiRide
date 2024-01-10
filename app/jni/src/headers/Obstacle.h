@@ -13,11 +13,17 @@ public:
 
     float velocity;
 
+    int obstacleTurn;
+
     bool invisible;
+
+    bool scorePoints;
 
     Obstacle(int x, float velocity);
 
     SDL_Rect oCollider;
+
+    SDL_Rect dstRect;
 
     //~Obstacle();
 

@@ -122,6 +122,7 @@ D:\SDL_Projects\androidstudio-projects\android-project\app\build\intermediates\c
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_version.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_locale.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_misc.h \
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../SDL2_ttf/SDL_ttf.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/LButton.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Constants.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/GameManager.h \
@@ -374,6 +375,8 @@ D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_
 D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_locale.h:
 
 D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_misc.h:
+
+D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../SDL2_ttf/SDL_ttf.h:
 
 D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/LButton.h:
 

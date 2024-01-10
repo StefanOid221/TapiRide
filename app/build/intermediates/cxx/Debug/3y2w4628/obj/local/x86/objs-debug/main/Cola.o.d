@@ -125,7 +125,8 @@ D:\SDL_Projects\androidstudio-projects\android-project\app\build\intermediates\c
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_timer.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_version.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_locale.h \
-  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_misc.h
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_misc.h \
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Player.h
 
 C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/iostream:
 
@@ -378,3 +379,5 @@ D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_
 D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_locale.h:
 
 D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_misc.h:
+
+D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Player.h:

@@ -1,6 +1,5 @@
 #ifndef UTIL_H
 #define UTIL_H
-
 //Starts up SDL and creates window
 bool init();
 
@@ -11,5 +10,11 @@ bool loadMedia();
 void close();
 
 void createObstacle();
+
+void savePointsRecord(int points);
+
+int retrievePointsRecord();
+
+void createFile();
 
 #endif

@@ -18,12 +18,7 @@ struct Touch {
 std::vector<Touch> activeTouches;
 
 Player::Player() {
-    posX = gScreenRect.w/2;
-    posY = gScreenRect.h*3/4;
-    velX = velY = 0;
-
-    collider.w = gPlayerTexture.getWidth();
-    collider.h = gPlayerTexture.getHeight()*2;
+    isInit = false;
 }
 
 void Player::getPosition(int* x, int* y) {
@@ -94,10 +89,11 @@ void Player::move(double deltatime){
     }
     posX +=  static_cast<int>(velX);
     //If the dot went too far to the left or right
-    if( ( posX  < 0 ) || ( posX > gScreenRect.w) )
+    if( ( posX  < 0 ) || ( posX > gScreenRect.w - 2*gPlayerTexture.getWidth()))
     {
         //Move back
         posX -= static_cast<int>(velX);
+        collissionDetected = true;
     }
 
     //Move the dot up or down
@@ -108,22 +104,19 @@ void Player::move(double deltatime){
     if( ( posY < 0 ) || ( posY > gScreenRect.h - collider.h - collider.h/2 - 15))
     {
         posY -=  static_cast<int>(velY);
+        collissionDetected = true;
     }
 
-    collider.x = posX + gPlayerTexture.getWidth()/2;
+    collider.x = posX + dstRect.w/2 - dstRect.w/8;
     collider.y = posY;
 }
 
 void Player:: render() {
-    SDL_Rect gDimension;
 
-    gDimension.w = gPlayerTexture.getWidth()*2;
-    gDimension.h = gPlayerTexture.getHeight()*2;
-
-    SDL_SetRenderDrawColor( gRenderer, 0xFF, 0x00, 0x00, 0xFF );
+    SDL_SetRenderDrawColor( gRenderer, 200, 40, 0, 1 );
     SDL_RenderFillRect( gRenderer, &collider );
+    gPlayerTexture.render(posX, posY, nullptr, &dstRect);
 
-    gPlayerTexture.render(posX, posY, nullptr, &gDimension);
 }
 
 void Player::logPosition() {
@@ -132,7 +125,37 @@ void Player::logPosition() {
 }
 
 void Player::setPosition() {
-    posX = gScreenRect.w/2;
-    posY = gScreenRect.h*3/4;
+    posX = gScreenRect.w/2 - gPlayerTexture.getWidth();
+    posY = gScreenRect.h/2;
 }
 
+void Player::setYVelocity(float y) {
+    velY = y;
+}
+
+void Player::initPlayer() {
+    posY = gScreenRect.h*3/4;
+    velX = velY = 0;
+
+    collissionDetected = false;
+    pointScored = false;
+    isInit = false;
+
+    collider.w = gPlayerTexture.getWidth();
+    collider.h = gPlayerTexture.getHeight()*2;
+
+    float scaleX = static_cast<float>(gScreenRect.w) / gPlayerTexture.getWidth();
+    float scaleY = static_cast<float>(gScreenRect.h) / gPlayerTexture.getHeight();
+
+    float scale = std::min(scaleX, scaleY); // Use the smaller scale factor to maintain aspect ratio
+
+    int scaledWidth = static_cast<int>(gPlayerTexture.getWidth() * scaleX);
+    int scaledHeight = static_cast<int>(gPlayerTexture.getHeight() * scaleY);
+
+    dstRect = { (gScreenRect.w - scaledWidth) / 2, (gScreenRect.h - scaledHeight) / 2, scaledWidth/4, scaledHeight/8 };
+
+    collider.w = dstRect.w/4;
+    collider.h = dstRect.h;
+
+    posX = gScreenRect.w/2;
+}

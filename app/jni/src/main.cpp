@@ -5,6 +5,7 @@
 #include <Obstacle.h>
 #include <GameManager.h>
 #include <cstring>
+#include <android/native_activity.h>
 
 int main( int argc, char *argv[] )
 {
@@ -21,6 +22,8 @@ int main( int argc, char *argv[] )
         }
         else {
             SDL_Event e;
+            createFile();
+            recordScore = retrievePointsRecord();
 
             //FPS
             int countedFrames = 0;
@@ -69,3 +72,5 @@ int main( int argc, char *argv[] )
     // std::cin.get();
     return 0;
 }
+
+

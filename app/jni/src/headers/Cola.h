@@ -35,6 +35,8 @@ public:
 
     bool checkColission(Player* player);
 
+    void correctAllObstacles();
+
 };
 
 #endif //ANDROID_PROJECT_COLA_H

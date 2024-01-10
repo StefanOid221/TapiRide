@@ -61,6 +61,7 @@ D:\SDL_Projects\androidstudio-projects\android-project\app\build\intermediates\c
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_version.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_locale.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_misc.h \
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../SDL2_ttf/SDL_ttf.h \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/string \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/string_view \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/__string \
@@ -104,7 +105,12 @@ D:\SDL_Projects\androidstudio-projects\android-project\app\build\intermediates\c
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/wctype.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Globals.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/LButton.h \
-  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Constants.h
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Constants.h \
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/GameManager.h \
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Cola.h \
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Obstacle.h \
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Player.h \
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/LTimer.h
 
 D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/LTexture.h:
 
@@ -228,6 +234,8 @@ D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_
 
 D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_misc.h:
 
+D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../SDL2_ttf/SDL_ttf.h:
+
 C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/string:
 
 C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/string_view:
@@ -315,3 +323,13 @@ D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/header
 D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/LButton.h:
 
 D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Constants.h:
+
+D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/GameManager.h:
+
+D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Cola.h:
+
+D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Obstacle.h:
+
+D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Player.h:
+
+D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/LTimer.h:

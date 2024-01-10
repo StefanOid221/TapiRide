@@ -63,6 +63,7 @@ D:\SDL_Projects\androidstudio-projects\android-project\app\build\intermediates\c
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Globals.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/LTexture.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../SDL2_image/SDL_image.h \
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../SDL2_ttf/SDL_ttf.h \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/string \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/string_view \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/__string \
@@ -236,6 +237,8 @@ D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/header
 D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/LTexture.h:
 
 D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../SDL2_image/SDL_image.h:
+
+D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../SDL2_ttf/SDL_ttf.h:
 
 C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/string:
 
