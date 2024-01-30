@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:5:1-99:12
-INJECTED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:5:1-99:12
-INJECTED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:5:1-99:12
-INJECTED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:5:1-99:12
+ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:5:1-101:12
+INJECTED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:5:1-101:12
+INJECTED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:5:1-101:12
+INJECTED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:5:1-101:12
 	package
 		INJECTED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml
 	android:versionName
@@ -50,57 +50,61 @@ ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\A
 		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:32:9-33
 	android:name
 		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:31:9-48
-uses-permission#android.permission.VIBRATE
-ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:49:5-66
+uses-feature#android.hardware.audio.low_latency
+ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:33:5-35:36
+	android:required
+		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:35:9-33
 	android:name
-		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:49:22-63
+		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:34:9-58
+uses-permission#android.permission.VIBRATE
+ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:52:5-66
+	android:name
+		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:52:22-63
 application
-ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:62:5-97:19
-INJECTED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:62:5-97:19
+ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:65:5-99:19
+INJECTED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:65:5-99:19
 	android:extractNativeLibs
 		INJECTED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml
 	android:label
-		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:62:18-50
+		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:65:18-42
 	android:hardwareAccelerated
-		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:66:9-43
+		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:69:9-43
 	android:icon
-		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:63:9-43
+		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:66:9-43
 	android:allowBackup
-		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:64:9-35
+		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:67:9-35
 	android:theme
-		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:65:9-67
-activity#org.libsdl.app.SDLActivity
-ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:72:9-96:20
-	android:label
-		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:73:13-45
+		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:68:9-67
+activity#com.game.TapiRide
+ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:75:9-98:20
 	android:launchMode
-		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:75:13-48
+		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:77:13-48
 	android:exported
-		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:78:13-36
+		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:80:13-36
 	android:configChanges
-		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:76:13-156
+		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:78:13-156
 	android:alwaysRetainTaskState
-		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:74:13-49
+		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:76:13-49
 	android:preferMinimalPostProcessing
-		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:77:13-55
+		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:79:13-55
 	android:name
-		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:72:19-45
+		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:75:19-51
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:80:13-83:29
+ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:82:13-85:29
 action#android.intent.action.MAIN
-ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:81:17-69
+ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:83:17-69
 	android:name
-		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:81:25-66
+		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:83:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:82:17-77
+ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:84:17-77
 	android:name
-		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:82:27-74
+		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:84:27-74
 intent-filter#action:name:android.hardware.usb.action.USB_DEVICE_ATTACHED
-ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:85:13-87:29
+ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:87:13-89:29
 action#android.hardware.usb.action.USB_DEVICE_ATTACHED
-ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:86:17-90
+ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:88:17-90
 	android:name
-		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:86:25-87
+		ADDED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml:88:25-87
 uses-sdk
 INJECTED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\SDL_Projects\androidstudio-projects\android-project\app\src\main\AndroidManifest.xml

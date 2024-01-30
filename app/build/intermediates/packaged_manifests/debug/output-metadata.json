@@ -4,7 +4,7 @@
     "type": "PACKAGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "org.libsdl.app",
+  "applicationId": "com.game.TapiRide",
   "variantName": "debug",
   "elements": [
     {

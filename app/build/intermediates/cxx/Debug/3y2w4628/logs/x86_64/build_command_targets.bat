@@ -10,4 +10,7 @@
   "NDK_LIBS_OUT=D:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/lib" ^
   "APP_PLATFORM=android-19" ^
   SDL2 ^
+  SDL2_image ^
+  SDL2_mixer ^
+  SDL2_ttf ^
   main

@@ -25,7 +25,6 @@ import android.os.Handler;
 import android.os.Message;
 import android.text.Editable;
 import android.text.InputType;
-import android.text.Selection;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.util.SparseArray;

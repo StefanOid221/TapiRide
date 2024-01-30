@@ -57,6 +57,11 @@ bool init()
                     SDL_Log( "##SDL## SDL_image could not initialize! SDL_image Error: %s\n", IMG_GetError() );
 					success = false;
 				}
+                if( Mix_OpenAudio( 44100, MIX_DEFAULT_FORMAT, 2, 16 ) < 0 )
+                {
+                    SDL_Log( "SDL_mixer could not initialize! SDL_mixer Error: %s\n", Mix_GetError() );
+                    success = false;
+                }
                 if( TTF_Init() == -1 )
                 {
                     printf( "SDL_ttf could not initialize! SDL_ttf Error: %s\n", TTF_GetError() );
@@ -85,6 +90,21 @@ bool loadMedia()
 		SDL_Log( "##SDL## Failed to load tablero texture!%s\n", SDL_GetError() );
 		success = false;
 	}
+	gSkateMusicSound = Mix_LoadMUS("sounds/skateMusic.wav");
+	if(!gSkateMusicSound){
+		SDL_Log( "Failed to load skate music effect! SDL_mixer Error: %s\n", Mix_GetError() );
+		success = false;
+	}
+	gPointScored = Mix_LoadWAV("sounds/pointScored.wav");
+	if(!gPointScored){
+		SDL_Log( "Failed to load point scored sound effect! SDL_mixer Error: %s\n", Mix_GetError() );
+		success = false;
+	}
+	gMusicSound = Mix_LoadWAV("sounds/gameOver.wav");
+	if(!gMusicSound){
+		SDL_Log( "Failed to load music sound effect! SDL_mixer Error: %s\n", Mix_GetError() );
+		success = false;
+	}
 	SDL_Log("f %d", gBackgroundTexture.getWidth());
     if( !gObstacleTexture.loadFromFile( "images/car.png" ) )
     {
@@ -110,6 +130,7 @@ void close()
 	gPlayerTexture.free();
     gObstacleTexture.free();
     gFontTexture.free();
+    gTutorialTexture.free();
 	//Destroy window	
 	SDL_DestroyRenderer( gRenderer );
 	SDL_DestroyWindow( gWindow );
@@ -118,6 +139,13 @@ void close()
     gCurrentState = nullptr;
     gNextState = nullptr;
     gFont = nullptr;
+
+    Mix_FreeChunk(gPointScored);
+	gPointScored = nullptr;
+	Mix_FreeChunk(gMusicSound);
+	gMusicSound = nullptr;
+	Mix_FreeMusic(gSkateMusicSound);
+	gSkateMusicSound = nullptr;
 
 	//Quit SDL subsystems
 	IMG_Quit();
@@ -131,15 +159,15 @@ void createObstacle() {
 	int randomNumber = distribution(gen);
 //	double scaleFactor = static_cast<float>(gScreenRect.w) / static_cast<float>(gBackgroundTexture.getWidth());
 	for (int i = 0; i < 3; ++i) {
-		auto* obstacle = new Obstacle( i, 10.0);
+		auto* obstacle = new Obstacle( i, 15.0);
 		if (randomNumber == i){
 			obstacle->invisible = true;
             obstacle->scorePoints = true;
-			obstacle->obstacleTurn = nObstacles +1;
-			obstacle->correctPosition();
+			obstacle->obstacleTurn = nObstacles+1;
+			obstacle->spawnPosition();
 		}
-		obstacle->obstacleTurn = nObstacles +1;
-		obstacle->correctPosition();
+		obstacle->obstacleTurn = nObstacles+1;
+		obstacle->spawnPosition();
 		gameManager.newObstacle(obstacle);
 	}
 	nObstacles++;

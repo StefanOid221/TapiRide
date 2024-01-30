@@ -1,2 +1,0 @@
-D:\SDL_Projects\androidstudio-projects\android-project\app\jni\Android.mk
-D:\SDL_Projects\androidstudio-projects\android-project\app\jni\Application.mk

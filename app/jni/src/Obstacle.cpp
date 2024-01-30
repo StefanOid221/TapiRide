@@ -41,10 +41,6 @@ Obstacle::Obstacle(int x, float vel){
 void Obstacle::render(){
 
     if (!invisible){
-        SDL_Rect gDimension;
-//        SDL_SetRenderDrawColor( gRenderer, 0xFF, 0x00, 0x00, 0xFF );
-//        SDL_RenderFillRect( gRenderer, &oCollider );
-
         gObstacleTexture.render(posX, posY, nullptr, &dstRect);
     }
 }
@@ -57,17 +53,20 @@ void Obstacle::move() {
 
 bool Obstacle::checkPosition() {
     if (posY > gScreenRect.h){
-        posY = -2500*obstacleTurn;
+        posY = gScreenRect.h-(2000*(nObstacles));
+        oCollider.y = posY;
         return true;
     }
     return false;
 }
 
 void Obstacle::correctPosition() {
-    posY = -2500*obstacleTurn;
+    posY = gScreenRect.h-(2000*(nObstacles));
+    oCollider.y = posY;
 }
 
-void Obstacle::logPosition() {
-    SDL_Log("Obstacle X %d",posX);
-    SDL_Log("Obstacle Y %d",posY);
+void Obstacle::spawnPosition() {
+    posY = -2000*obstacleTurn;
+    oCollider.y = posY;
+    scorePoints = true;
 }

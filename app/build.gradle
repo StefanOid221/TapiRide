@@ -13,6 +13,7 @@ android {
     }
     compileSdkVersion 34
     defaultConfig {
+        applicationId "com.game.TapiRide"
         minSdkVersion 19
         targetSdkVersion 34
         versionCode 1

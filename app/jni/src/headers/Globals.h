@@ -6,6 +6,7 @@
 #include "GameManager.h"
 #include "Player.h"
 #include "LTimer.h"
+#include "SDL_mixer.h"
 
 //The window we'll be rendering to
 extern SDL_Window* gWindow;
@@ -13,8 +14,13 @@ extern SDL_Window* gWindow;
 //The window renderer
 extern SDL_Renderer* gRenderer;
 
+extern Mix_Chunk* gPointScored;
+extern Mix_Chunk* gMusicSound;
+extern Mix_Music* gSkateMusicSound;
+
 extern LTexture gBackgroundTexture;
 extern LTexture gPlayerTexture;
+extern LTexture gTutorialTexture;
 extern LTexture gObstacleTexture;
 extern LTexture gFontTexture;
 

@@ -32,6 +32,63 @@
     "{LIST_OF_TARGETS_TO_BUILD}"
   ],
   "libraries": {
+    "SDL2_mixer-debug-armeabi-v7a": {
+      "artifactName": "SDL2_mixer",
+      "buildCommandComponents": [
+        "C:\\Users\\stefu\\AppData\\Local\\Android\\Sdk\\ndk\\25.1.8937393\\ndk-build.cmd",
+        "NDK_PROJECT_PATH\u003dnull",
+        "APP_BUILD_SCRIPT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\jni\\Application.mk",
+        "APP_ABI\u003darmeabi-v7a",
+        "NDK_ALL_ABIS\u003darmeabi-v7a",
+        "NDK_DEBUG\u003d1",
+        "NDK_OUT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/obj",
+        "NDK_LIBS_OUT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/lib",
+        "APP_PLATFORM\u003dandroid-19",
+        "D:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/obj/local/armeabi-v7a/libSDL2_mixer.so"
+      ],
+      "abi": "armeabi-v7a",
+      "output": "D:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628\\obj\\local\\armeabi-v7a\\libSDL2_mixer.so",
+      "runtimeFiles": []
+    },
+    "SDL2_image-debug-armeabi-v7a": {
+      "artifactName": "SDL2_image",
+      "buildCommandComponents": [
+        "C:\\Users\\stefu\\AppData\\Local\\Android\\Sdk\\ndk\\25.1.8937393\\ndk-build.cmd",
+        "NDK_PROJECT_PATH\u003dnull",
+        "APP_BUILD_SCRIPT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\jni\\Application.mk",
+        "APP_ABI\u003darmeabi-v7a",
+        "NDK_ALL_ABIS\u003darmeabi-v7a",
+        "NDK_DEBUG\u003d1",
+        "NDK_OUT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/obj",
+        "NDK_LIBS_OUT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/lib",
+        "APP_PLATFORM\u003dandroid-19",
+        "D:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/obj/local/armeabi-v7a/libSDL2_image.so"
+      ],
+      "abi": "armeabi-v7a",
+      "output": "D:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628\\obj\\local\\armeabi-v7a\\libSDL2_image.so",
+      "runtimeFiles": []
+    },
+    "SDL2_ttf-debug-armeabi-v7a": {
+      "artifactName": "SDL2_ttf",
+      "buildCommandComponents": [
+        "C:\\Users\\stefu\\AppData\\Local\\Android\\Sdk\\ndk\\25.1.8937393\\ndk-build.cmd",
+        "NDK_PROJECT_PATH\u003dnull",
+        "APP_BUILD_SCRIPT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\jni\\Application.mk",
+        "APP_ABI\u003darmeabi-v7a",
+        "NDK_ALL_ABIS\u003darmeabi-v7a",
+        "NDK_DEBUG\u003d1",
+        "NDK_OUT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/obj",
+        "NDK_LIBS_OUT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/lib",
+        "APP_PLATFORM\u003dandroid-19",
+        "D:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/obj/local/armeabi-v7a/libSDL2_ttf.so"
+      ],
+      "abi": "armeabi-v7a",
+      "output": "D:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628\\obj\\local\\armeabi-v7a\\libSDL2_ttf.so",
+      "runtimeFiles": []
+    },
     "main-debug-armeabi-v7a": {
       "artifactName": "main",
       "buildCommandComponents": [
@@ -68,6 +125,44 @@
       ],
       "abi": "armeabi-v7a",
       "output": "D:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628\\obj\\local\\armeabi-v7a\\libSDL2.so",
+      "runtimeFiles": []
+    },
+    "harfbuzz-debug-armeabi-v7a": {
+      "artifactName": "harfbuzz",
+      "buildCommandComponents": [
+        "C:\\Users\\stefu\\AppData\\Local\\Android\\Sdk\\ndk\\25.1.8937393\\ndk-build.cmd",
+        "NDK_PROJECT_PATH\u003dnull",
+        "APP_BUILD_SCRIPT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\jni\\Application.mk",
+        "APP_ABI\u003darmeabi-v7a",
+        "NDK_ALL_ABIS\u003darmeabi-v7a",
+        "NDK_DEBUG\u003d1",
+        "NDK_OUT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/obj",
+        "NDK_LIBS_OUT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/lib",
+        "APP_PLATFORM\u003dandroid-19",
+        "D:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/obj/local/armeabi-v7a/libharfbuzz.a"
+      ],
+      "abi": "armeabi-v7a",
+      "output": "D:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628\\obj\\local\\armeabi-v7a\\libharfbuzz.a",
+      "runtimeFiles": []
+    },
+    "freetype-debug-armeabi-v7a": {
+      "artifactName": "freetype",
+      "buildCommandComponents": [
+        "C:\\Users\\stefu\\AppData\\Local\\Android\\Sdk\\ndk\\25.1.8937393\\ndk-build.cmd",
+        "NDK_PROJECT_PATH\u003dnull",
+        "APP_BUILD_SCRIPT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\jni\\Application.mk",
+        "APP_ABI\u003darmeabi-v7a",
+        "NDK_ALL_ABIS\u003darmeabi-v7a",
+        "NDK_DEBUG\u003d1",
+        "NDK_OUT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/obj",
+        "NDK_LIBS_OUT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/lib",
+        "APP_PLATFORM\u003dandroid-19",
+        "D:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/obj/local/armeabi-v7a/libfreetype.a"
+      ],
+      "abi": "armeabi-v7a",
+      "output": "D:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628\\obj\\local\\armeabi-v7a\\libfreetype.a",
       "runtimeFiles": []
     },
     "cpufeatures-debug-armeabi-v7a": {

@@ -1,4 +1,4 @@
-#Wed Jan 10 11:16:42 CET 2024
+#Fri Jan 26 12:37:29 CET 2024
 base.0=D\:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

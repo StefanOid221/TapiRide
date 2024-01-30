@@ -2,6 +2,7 @@
 // Created by stefu on 12/12/2023.
 //
 
+#include <cmath>
 #include "GameManager.h"
 #include "Globals.h"
 #include "Cola.h"
@@ -20,13 +21,13 @@ bool IntroState::enter()
 
     introColor = { 255, 165, 0,0 };
     SDL_Color blackColor = {0,0,0,0};
-    introFont = TTF_OpenFont("fonts/Cubex.ttf", 120);
+    introFont = TTF_OpenFont("fonts/MOSKOMAPPA.otf", 200);
     if( introFont == nullptr )
     {
         printf( "Failed to load lazy font! SDL_ttf Error: %s\n", TTF_GetError() );
         success = false;
     }
-    if(!mMessageTexture.loadFromRenderedText("Tapir Jump", introColor, introFont)){
+    if(!mMessageTexture.loadFromRenderedText("TapiRide", introColor, introFont)){
         SDL_Log("Failed font texture");
         success= false;
     }
@@ -46,14 +47,14 @@ bool IntroState::enter()
     buttonDimension2.y = buttonDimension.y - 10;
     buttonDimension3.x = buttonDimension.x - 20;
     buttonDimension3.y = buttonDimension.y - 20;
-
+    Mix_HaltChannel(-1);
     return success;
 }
 
 void IntroState::handleEvent( SDL_Event& e )
 {
     //If the user pressed enter
-    if(e.type == SDL_FINGERDOWN)
+    if(e.type == SDL_FINGERUP)
     {
         bool inside = true;
         int x, y;
@@ -120,11 +121,12 @@ GameOverState* GameOverState::get()
 
 bool GameOverState::enter()
 {
+    Mix_PlayChannel(-1, gMusicSound, 0);
     SDL_Log("Exit state enter");
     bool success = true;
     exitColor = { 255, 165, 0,0 };
     SDL_Color blackColor = {0,0,0,0};
-    exitFont = TTF_OpenFont("fonts/Cubex.ttf", 80);
+    exitFont = TTF_OpenFont("fonts/MOSKOMAPPA.otf", 120);
     if( exitFont == nullptr )
     {
         printf( "Failed to load lazy font! SDL_ttf Error: %s\n", TTF_GetError() );
@@ -173,7 +175,7 @@ bool GameOverState::exit()
 
 void GameOverState::handleEvent( SDL_Event& e )
 {
-    if(e.type == SDL_FINGERDOWN)
+    if(e.type == SDL_FINGERUP)
     {
         bool inside = true;
         int x, y;
@@ -235,7 +237,7 @@ bool TitleState::enter()
     bool success = true;
 
     titleColor = { 255, 165, 0,0 };
-    titleFont = TTF_OpenFont("fonts/Cubex.ttf", 85);
+    titleFont = TTF_OpenFont("fonts/MOSKOMAPPA.otf", 140);
     if( titleFont == nullptr )
     {
         printf( "Failed to load lazy font! SDL_ttf Error: %s\n", TTF_GetError() );
@@ -245,10 +247,26 @@ bool TitleState::enter()
         SDL_Log("Failed font texture");
         success= false;
     }
+    if (!tapIn.loadFromFile("images/tapIn.png")){
+        SDL_Log( "##SDL## Failed to load tutorial texture!%s\n", SDL_GetError() );
+        success = false;
+    }
+    if (!tapOut.loadFromFile("images/tapOut.png")){
+        SDL_Log( "##SDL## Failed to load tutorial texture!%s\n", SDL_GetError() );
+        success = false;
+    }
+    if (!tiltText.loadFromFile("images/messageTilt.png")){
+        SDL_Log( "##SDL## Failed to load tutorial texture!%s\n", SDL_GetError() );
+        success = false;
+    }
+    if (!mobileTexture.loadFromFile("images/movilGirador.png")){
+        SDL_Log( "##SDL## Failed to load tutorial texture!%s\n", SDL_GetError() );
+        success = false;
+    }
     if (!player.isInit){
         player.initPlayer();
     }
-
+    degrees = 0;
     return success;
 }
 
@@ -257,6 +275,10 @@ bool TitleState::exit()
     //Free background and text
     titleMessageTexture.free();
     titleFont = nullptr;
+    tapIn.free();
+    tapOut.free();
+    mobileTexture.free();
+    tiltText.free();
     return true;
 }
 
@@ -265,22 +287,54 @@ void TitleState::handleEvent( SDL_Event& e )
     //If the user pressed enter
     if(  e.type == SDL_FINGERDOWN  )
     {
-        //Move to overworld
         setNextState( OverWorldState::get() );
     }
 }
 
 void TitleState::update()
 {
-
+    LAST = NOW;
+    NOW = SDL_GetTicks();
+    deltaTime = NOW - LAST;
 }
 
 void TitleState::render()
 {
+    SDL_Rect insRect;
+    insRect.w = player.dstRect.w*2;
+    insRect.h = player.dstRect.h*2;
+    insRect.x = gScreenRect.w;
+    insRect.y = gScreenRect.h;
     //Show the background
     gBackgroundTexture.render( 0, 0, nullptr, &gScreenRect );
     gPlayerTexture.render(gScreenRect.w/2 -player.dstRect.w/2, gScreenRect.h/2, nullptr, &player.dstRect);
     titleMessageTexture.render(gScreenRect.w/2 - titleMessageTexture.getWidth()/2, 400);
+    if (SDL_GetTicks() - startTime > 500){
+        tapIn.render(gScreenRect.w/4 - insRect.w/2, gScreenRect.h*3/4 -  insRect.h/2, nullptr, &insRect);
+        if (SDL_GetTicks() - startTime > 1000)
+            startTime = SDL_GetTicks();
+    }
+    else{
+        tapOut.render(gScreenRect.w/4- insRect.w/2, gScreenRect.h*3/4 -  insRect.h/2, nullptr, &insRect);
+    }
+    if (!directionRigth){
+        degrees -= 0.7;
+        if (degrees < -12){
+            directionRigth = true;
+        }
+    }
+    else{
+        degrees += 0.7;
+        if (degrees > 12){
+            directionRigth = false;
+        }
+    }
+
+    mobileTexture.render(gScreenRect.w/4 + insRect.w/2, gScreenRect.h*3/4 -  insRect.h/2, nullptr, &insRect, degrees,
+                         nullptr, SDL_FLIP_HORIZONTAL);
+    tiltText.render(gScreenRect.w/4 + insRect.w/2, gScreenRect.h*3/4-  insRect.h/2, nullptr, &insRect);
+
+
 
 }
 
@@ -297,14 +351,23 @@ OverWorldState* OverWorldState::get() {
 }
 
 bool OverWorldState::enter() {
+    if( Mix_PlayingMusic() == 0 )
+    {
+        //Play the music
+        Mix_PlayMusic( gSkateMusicSound, -1 );
+    }
+    gameManager.correctObstaclePosition();
     bool success = true;
     deltaTime = 0;
     player.setPosition();
-    player.setYVelocity(15.0);
 
+    player.setYVelocity(30);
+
+    actualScore = 0;
+    lastScore = 0;
 
     gameColor = { 255, 165, 0,0 };
-    gameFont = TTF_OpenFont("fonts/Cubex.ttf", 80);
+    gameFont = TTF_OpenFont("fonts/MOSKOMAPPA.otf", 140);
     if( gameFont == nullptr )
     {
         printf( "Failed to load lazy font! SDL_ttf Error: %s\n", TTF_GetError() );
@@ -318,6 +381,7 @@ bool OverWorldState::enter() {
 }
 
 bool OverWorldState::exit(){
+    Mix_HaltMusic();
     gameScoreTexture.free();
     gameFont = nullptr;
     if (recordScore < actualScore){
@@ -333,18 +397,16 @@ void OverWorldState::update() {
     LAST = NOW;
     NOW = SDL_GetTicks();
     deltaTime = NOW - LAST;
-    if (nObstacles < 2){
-        if (SDL_GetTicks() - startTime > 0){
-            createObstacle();
-            startTime = SDL_GetTicks();
-        }
+    if (nObstacles < 3){
+        createObstacle();
+        SDL_GetTicks();
     }
-
-    player.move(deltaTime);
+    if (deltaTime < 100){
+        player.move(deltaTime);
+    }
     gameManager.moveObstacles();
     if (player.collissionDetected){
         player.collissionDetected = false;
-        SDL_Log("Collision detected");
         setNextState(GameOverState::get());
     }
     if(player.pointScored){
@@ -368,8 +430,8 @@ void OverWorldState::render() {
     gBackgroundTexture.render(0, scrollingOffset,nullptr, &gScreenRect);
     gBackgroundTexture.render(0, scrollingOffset - gBackgroundTexture.getHeight(),nullptr, &gScreenRect);
     gameManager.renderObstacles();
-    gameManager.checkCollision(&player);
     player.render();
+    gameManager.checkCollision(&player);
     gameScoreTexture.render(gScreenRect.w/2 - gameScoreTexture.getWidth()/2, 200);
 
 }

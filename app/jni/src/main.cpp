@@ -6,6 +6,7 @@
 #include <GameManager.h>
 #include <cstring>
 #include <android/native_activity.h>
+#include "../SDL2/src/core/android/SDL_android.h"
 
 int main( int argc, char *argv[] )
 {
@@ -24,6 +25,7 @@ int main( int argc, char *argv[] )
             SDL_Event e;
             createFile();
             recordScore = retrievePointsRecord();
+
 
             //FPS
             int countedFrames = 0;
@@ -50,6 +52,7 @@ int main( int argc, char *argv[] )
                     avgFPS = 0;
                 }
                 gCurrentState->update();
+
                 changeState();
                 //Render Elements
 //                SDL_SetRenderDrawColor( gRenderer, 0xFF, 0xFF, 0xFF, 0xFF );

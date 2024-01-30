@@ -1,5 +1,10 @@
 D:\SDL_Projects\androidstudio-projects\android-project\app\build\intermediates\cxx\Debug\3y2w4628/obj/local/x86/objs-debug/main/GameManager.o: \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/GameManager.cpp \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/cmath \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/__config \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/math.h \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/version \
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/type_traits \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/GameManager.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Cola.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Obstacle.h \
@@ -12,13 +17,11 @@ D:\SDL_Projects\androidstudio-projects\android-project\app\build\intermediates\c
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/close_code.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_config_android.h \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/stdio.h \
-  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/__config \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/stdlib.h \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/stddef.h \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/string.h \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/inttypes.h \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/ctype.h \
-  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/math.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_assert.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_atomic.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_audio.h \
@@ -72,13 +75,11 @@ D:\SDL_Projects\androidstudio-projects\android-project\app\build\intermediates\c
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/algorithm \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/initializer_list \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/cstddef \
-  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/type_traits \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/cstring \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/utility \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/__tuple \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/cstdint \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/stdint.h \
-  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/version \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/__debug \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/iosfwd \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/wchar.h \
@@ -111,7 +112,18 @@ D:\SDL_Projects\androidstudio-projects\android-project\app\build\intermediates\c
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/LButton.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Constants.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/LTimer.h \
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2_mixer/include/SDL_mixer.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Util.h
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/cmath:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/__config:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/math.h:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/version:
+
+C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/type_traits:
 
 D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/GameManager.h:
 
@@ -137,8 +149,6 @@ D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_
 
 C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/stdio.h:
 
-C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/__config:
-
 C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/stdlib.h:
 
 C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/stddef.h:
@@ -148,8 +158,6 @@ C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-s
 C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/inttypes.h:
 
 C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/ctype.h:
-
-C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/math.h:
 
 D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2/include/SDL_assert.h:
 
@@ -257,8 +265,6 @@ C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-s
 
 C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/cstddef:
 
-C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/type_traits:
-
 C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/cstring:
 
 C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/utility:
@@ -268,8 +274,6 @@ C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-s
 C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/cstdint:
 
 C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/stdint.h:
-
-C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/version:
 
 C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/__debug:
 
@@ -334,5 +338,7 @@ D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/header
 D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Constants.h:
 
 D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/LTimer.h:
+
+D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2_mixer/include/SDL_mixer.h:
 
 D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Util.h:

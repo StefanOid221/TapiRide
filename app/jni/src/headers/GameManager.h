@@ -106,10 +106,20 @@ private:
     //Static instance
     static TitleState sTitleState;
 
+    Uint32 startTime = 0;
+    bool directionRigth = false;
+    Uint32 NOW{}, LAST{};
+
+    double degrees = -30;
+
     //Private constructor
     TitleState();
 
     LTexture titleMessageTexture;
+    LTexture tapIn;
+    LTexture tapOut;
+    LTexture mobileTexture;
+    LTexture tiltText;
     TTF_Font* titleFont;
     SDL_Color titleColor = { 0, 0, 0 };
 };

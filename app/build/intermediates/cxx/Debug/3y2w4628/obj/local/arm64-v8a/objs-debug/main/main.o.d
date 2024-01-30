@@ -129,7 +129,11 @@ D:\SDL_Projects\androidstudio-projects\android-project\app\build\intermediates\c
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Obstacle.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Player.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/LTimer.h \
-  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Util.h
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2_mixer/include/SDL_mixer.h \
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Util.h \
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../SDL2/src/core/android/SDL_android.h \
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../SDL2/src/core/android/../../SDL_internal.h \
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../SDL2/src/core/android/../../dynapi/SDL_dynapi.h
 
 C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/iostream:
 
@@ -389,4 +393,12 @@ D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/header
 
 D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/LTimer.h:
 
+D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2_mixer/include/SDL_mixer.h:
+
 D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Util.h:
+
+D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../SDL2/src/core/android/SDL_android.h:
+
+D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../SDL2/src/core/android/../../SDL_internal.h:
+
+D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../SDL2/src/core/android/../../dynapi/SDL_dynapi.h:

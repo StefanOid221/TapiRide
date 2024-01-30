@@ -51,6 +51,63 @@
       "output": "D:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628\\obj\\local\\arm64-v8a\\libmain.so",
       "runtimeFiles": []
     },
+    "SDL2_mixer-debug-arm64-v8a": {
+      "artifactName": "SDL2_mixer",
+      "buildCommandComponents": [
+        "C:\\Users\\stefu\\AppData\\Local\\Android\\Sdk\\ndk\\25.1.8937393\\ndk-build.cmd",
+        "NDK_PROJECT_PATH\u003dnull",
+        "APP_BUILD_SCRIPT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\jni\\Application.mk",
+        "APP_ABI\u003darm64-v8a",
+        "NDK_ALL_ABIS\u003darm64-v8a",
+        "NDK_DEBUG\u003d1",
+        "NDK_OUT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/obj",
+        "NDK_LIBS_OUT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/lib",
+        "APP_PLATFORM\u003dandroid-19",
+        "D:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/obj/local/arm64-v8a/libSDL2_mixer.so"
+      ],
+      "abi": "arm64-v8a",
+      "output": "D:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628\\obj\\local\\arm64-v8a\\libSDL2_mixer.so",
+      "runtimeFiles": []
+    },
+    "SDL2_ttf-debug-arm64-v8a": {
+      "artifactName": "SDL2_ttf",
+      "buildCommandComponents": [
+        "C:\\Users\\stefu\\AppData\\Local\\Android\\Sdk\\ndk\\25.1.8937393\\ndk-build.cmd",
+        "NDK_PROJECT_PATH\u003dnull",
+        "APP_BUILD_SCRIPT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\jni\\Application.mk",
+        "APP_ABI\u003darm64-v8a",
+        "NDK_ALL_ABIS\u003darm64-v8a",
+        "NDK_DEBUG\u003d1",
+        "NDK_OUT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/obj",
+        "NDK_LIBS_OUT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/lib",
+        "APP_PLATFORM\u003dandroid-19",
+        "D:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/obj/local/arm64-v8a/libSDL2_ttf.so"
+      ],
+      "abi": "arm64-v8a",
+      "output": "D:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628\\obj\\local\\arm64-v8a\\libSDL2_ttf.so",
+      "runtimeFiles": []
+    },
+    "freetype-debug-arm64-v8a": {
+      "artifactName": "freetype",
+      "buildCommandComponents": [
+        "C:\\Users\\stefu\\AppData\\Local\\Android\\Sdk\\ndk\\25.1.8937393\\ndk-build.cmd",
+        "NDK_PROJECT_PATH\u003dnull",
+        "APP_BUILD_SCRIPT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\jni\\Application.mk",
+        "APP_ABI\u003darm64-v8a",
+        "NDK_ALL_ABIS\u003darm64-v8a",
+        "NDK_DEBUG\u003d1",
+        "NDK_OUT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/obj",
+        "NDK_LIBS_OUT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/lib",
+        "APP_PLATFORM\u003dandroid-19",
+        "D:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/obj/local/arm64-v8a/libfreetype.a"
+      ],
+      "abi": "arm64-v8a",
+      "output": "D:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628\\obj\\local\\arm64-v8a\\libfreetype.a",
+      "runtimeFiles": []
+    },
     "SDL2-debug-arm64-v8a": {
       "artifactName": "SDL2",
       "buildCommandComponents": [
@@ -70,6 +127,25 @@
       "output": "D:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628\\obj\\local\\arm64-v8a\\libSDL2.so",
       "runtimeFiles": []
     },
+    "SDL2_image-debug-arm64-v8a": {
+      "artifactName": "SDL2_image",
+      "buildCommandComponents": [
+        "C:\\Users\\stefu\\AppData\\Local\\Android\\Sdk\\ndk\\25.1.8937393\\ndk-build.cmd",
+        "NDK_PROJECT_PATH\u003dnull",
+        "APP_BUILD_SCRIPT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\jni\\Application.mk",
+        "APP_ABI\u003darm64-v8a",
+        "NDK_ALL_ABIS\u003darm64-v8a",
+        "NDK_DEBUG\u003d1",
+        "NDK_OUT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/obj",
+        "NDK_LIBS_OUT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/lib",
+        "APP_PLATFORM\u003dandroid-19",
+        "D:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/obj/local/arm64-v8a/libSDL2_image.so"
+      ],
+      "abi": "arm64-v8a",
+      "output": "D:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628\\obj\\local\\arm64-v8a\\libSDL2_image.so",
+      "runtimeFiles": []
+    },
     "cpufeatures-debug-arm64-v8a": {
       "artifactName": "cpufeatures",
       "buildCommandComponents": [
@@ -87,6 +163,25 @@
       ],
       "abi": "arm64-v8a",
       "output": "D:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628\\obj\\local\\arm64-v8a\\libcpufeatures.a",
+      "runtimeFiles": []
+    },
+    "harfbuzz-debug-arm64-v8a": {
+      "artifactName": "harfbuzz",
+      "buildCommandComponents": [
+        "C:\\Users\\stefu\\AppData\\Local\\Android\\Sdk\\ndk\\25.1.8937393\\ndk-build.cmd",
+        "NDK_PROJECT_PATH\u003dnull",
+        "APP_BUILD_SCRIPT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\jni\\Application.mk",
+        "APP_ABI\u003darm64-v8a",
+        "NDK_ALL_ABIS\u003darm64-v8a",
+        "NDK_DEBUG\u003d1",
+        "NDK_OUT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/obj",
+        "NDK_LIBS_OUT\u003dD:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/lib",
+        "APP_PLATFORM\u003dandroid-19",
+        "D:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628/obj/local/arm64-v8a/libharfbuzz.a"
+      ],
+      "abi": "arm64-v8a",
+      "output": "D:\\SDL_Projects\\androidstudio-projects\\android-project\\app\\build\\intermediates\\cxx\\Debug\\3y2w4628\\obj\\local\\arm64-v8a\\libharfbuzz.a",
       "runtimeFiles": []
     }
   }

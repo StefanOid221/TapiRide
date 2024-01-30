@@ -33,12 +33,6 @@ public:
 
     void move(double deltatime);
 
-    void getPosition(int* x, int* y);
-
-    void applyImpulse(int x, int y, int swipeMagnitude);
-
-    void logPosition();
-
     void setPosition();
 
     void setYVelocity(float y);
@@ -50,6 +44,8 @@ private:
     int posX, posY;
 
     float velX, velY;
+
+    float accelValues[3];
 
 };
 

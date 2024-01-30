@@ -6,9 +6,14 @@ SDL_Window* gWindow = nullptr;
 //The window renderer
 SDL_Renderer* gRenderer = nullptr;
 
+Mix_Chunk* gPointScored = nullptr;
+Mix_Chunk* gMusicSound = nullptr;
+Mix_Music* gSkateMusicSound = nullptr;
+
 LTexture gBackgroundTexture;
 LTexture gPlayerTexture;
 LTexture gObstacleTexture;
+LTexture gTutorialTexture;
 LTexture gFontTexture;
 
 SDL_Rect gScreenRect;

@@ -110,7 +110,8 @@ D:\SDL_Projects\androidstudio-projects\android-project\app\build\intermediates\c
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Cola.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Obstacle.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Player.h \
-  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/LTimer.h
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/LTimer.h \
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2_mixer/include/SDL_mixer.h
 
 D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Globals.h:
 
@@ -333,3 +334,5 @@ D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/header
 D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Player.h:
 
 D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/LTimer.h:
+
+D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2_mixer/include/SDL_mixer.h:

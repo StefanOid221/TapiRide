@@ -111,6 +111,7 @@ D:\SDL_Projects\androidstudio-projects\android-project\app\build\intermediates\c
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Cola.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Obstacle.h \
   D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/LTimer.h \
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2_mixer/include/SDL_mixer.h \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/iostream \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/ios \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/__locale \
@@ -131,7 +132,10 @@ D:\SDL_Projects\androidstudio-projects\android-project\app\build\intermediates\c
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/__bit_reference \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/vector \
   C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/__split_buffer \
-  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/cmath
+  C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/cmath \
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../SDL2/src/core/android/SDL_android.h \
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../SDL2/src/core/android/../../SDL_internal.h \
+  D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../SDL2/src/core/android/../../dynapi/SDL_dynapi.h
 
 D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/Player.h:
 
@@ -355,6 +359,8 @@ D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/header
 
 D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../src/headers/LTimer.h:
 
+D:/SDL_Projects/androidstudio-projects/android-project/app/jni/SDL2_mixer/include/SDL_mixer.h:
+
 C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/iostream:
 
 C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/ios:
@@ -396,3 +402,9 @@ C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-s
 C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/__split_buffer:
 
 C:/Users/stefu/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/../sources/cxx-stl/llvm-libc++/include/cmath:
+
+D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../SDL2/src/core/android/SDL_android.h:
+
+D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../SDL2/src/core/android/../../SDL_internal.h:
+
+D:/SDL_Projects/androidstudio-projects/android-project/app/jni/src/../SDL2/src/core/android/../../dynapi/SDL_dynapi.h:

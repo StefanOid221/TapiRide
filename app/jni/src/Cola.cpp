@@ -8,6 +8,7 @@
 using namespace std;
 
 #include "Cola.h"
+#include "Globals.h"
 
 Cola::Nodo::Nodo(Obstacle* d) : dato{d}, siguiente{nullptr} {
 }
@@ -18,7 +19,7 @@ Cola::Cola() : primero{nullptr}, ultimo{nullptr} {
 void Cola::encolar(Obstacle* d) {
     Nodo * nuevo = new Nodo(d);
 
-    if (primero == nullptr) // Tambien valdria if (estaVacia()); asi nos ahorramos la llamada
+    if (primero == nullptr)
         primero = nuevo;
     else
         ultimo->siguiente = nuevo;
@@ -125,12 +126,14 @@ bool Cola::checkColission(Player *player) {
             if (aux->dato->scorePoints){
                 SDL_Rect a = aux->dato->oCollider;
                 SDL_Rect b = player->collider;
-                topA = a.y;
-                topB = b.y;
+                bottomA = a.y + a.h;
+                bottomB = b.y + a.h;
 
-                if (topA > 0 && topB < topA && topA - topB < 50 ){
+                if (bottomA > 0 && bottomB < bottomA){
                     player->pointScored = true;
                     aux->dato->scorePoints = false;
+                    Mix_PlayChannel(-1, gPointScored, 0);
+                    break;
                 }
             }
         }
@@ -140,6 +143,6 @@ bool Cola::checkColission(Player *player) {
 
 void Cola::correctAllObstacles() {
     for (Nodo* aux =primero; aux!= nullptr; aux = aux->siguiente){
-        aux->dato->correctPosition();
+        aux->dato->spawnPosition();
     }
 }

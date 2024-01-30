@@ -35,7 +35,8 @@ public:
 
     void correctPosition();
 
-    void logPosition();
+    void spawnPosition();
+
 
 private:
 
